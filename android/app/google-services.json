@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "324208220343",
+    "project_id": "demotry-45028",
+    "storage_bucket": "demotry-45028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324208220343:android:639c8d46d12645ca4d9532",
+        "android_client_info": {
+          "package_name": "com.example.upload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324208220343-7plvfgbo5i9inqa48iar4vkulce7isle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5gg-XkKxri31VbJJtzpN7NbMGTfihers"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324208220343-7plvfgbo5i9inqa48iar4vkulce7isle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
