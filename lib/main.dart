@@ -21,8 +21,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
             body: Container(
+                padding: EdgeInsets.all(40.0),
                 child: Column(children: [
-      TextFormField(decoration: InputDecoration(hintText: 'sample data'))
-    ]))));
+                  TextFormField(decoration: InputDecoration(hintText: 'sample data'))
+                ]))));
   }
 }
