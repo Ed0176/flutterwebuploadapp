@@ -19,11 +19,16 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            body: Container(
-                padding: EdgeInsets.all(40.0),
-                child: Column(children: [
-                  TextFormField(decoration: InputDecoration(hintText: 'sample data'))
-                ]))));
+      home: Scaffold(
+        body: Container(
+          padding: EdgeInsets.all(40.0),
+          child: Center(
+            child: Column(children: [
+              TextFormField(decoration: InputDecoration(hintText: 'sample data'))
+            ]),
+          ),
+        ),
+      ),
+    );
   }
 }
