@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -17,6 +18,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  TextEditingController sampledata1 = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,9 +28,14 @@ class _MyAppState extends State<MyApp> {
           padding: EdgeInsets.all(40.0),
           child: Center(
             child: Column(children: [
-              TextFormField(decoration: InputDecoration(hintText: 'sample data')),
+              TextFormField(controller: sampledata1, decoration: InputDecoration(hintText: 'sample data')),
               FlatButton(
-                onPressed: () {},
+                onPressed: () {
+                  Map<String, dynamic> data = {
+                    "field1": sampledata1.text
+                  };
+                  Firestore.instance.collection('test').add(data);
+                },
                 child: Text('Submit'),
                 color: Colors.orange,
               )
