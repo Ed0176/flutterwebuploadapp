@@ -7,6 +7,7 @@ import 'package:upload/edit_course.dart';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -24,7 +25,12 @@ class _MyAppState extends State<MyApp> {
           padding: EdgeInsets.all(40.0),
           child: Center(
             child: Column(children: [
-              TextFormField(decoration: InputDecoration(hintText: 'sample data'))
+              TextFormField(decoration: InputDecoration(hintText: 'sample data')),
+              FlatButton(
+                onPressed: () {},
+                child: Text('Submit'),
+                color: Colors.orange,
+              )
             ]),
           ),
         ),
